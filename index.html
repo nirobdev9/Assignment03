@@ -26,30 +26,48 @@
 </head>
 
 <body>
-    <header class="bg-[#FFF9F4] py-8 sora-font">
-        <nav class="max-w-screen-xl mx-auto flex justify-between items-center">
+    <header class="bg-[#FFF9F4] py-8 sora-font border-b-2 border-[#111111] md:border-none">
+        <!-- navbar -->
+        <nav class="px-4 max-w-screen-xl mx-auto flex justify-between items-center">
             <!-- header logo -->
             <div class="flex justify-center items-center gap-2">
                 <img class="w-12" src="./c1-assets/logo-header.png" alt="">
-                <h2 class="text-3xl">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
+                <h2 class="hidden md:block text-3xl text-[#111111]">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
             </div>
             <!-- menu -->
-            <ul class="flex gap-8 text-xl">
+            <ul class="hidden md:flex gap-8 text-xl text-[#111111]">
                 <li><a href="">Find a pet</a></li>
                 <li><a href="">Breeds</a></li>
                 <li><a href="">Contact us</a></li>
             </ul>
             <!-- icons -->
-            <div class="flex gap-3 items-center">
+            <div class="hidden md:flex gap-3 items-center">
                 <i class="fa-regular fa-bell text-2xl"></i>
                 <i class="fa-solid fa-magnifying-glass text-2xl"></i>
-                <button class="text-xl border-2 border-[#FFDC26] px-7 py-2 rounded-lg">Login</button>
-                <button class="text-xl border-2 border-[#FFDC26] px-7 py-2 bg-[#FFDC26] rounded-lg">Register</button>
-            </div>
+                <!--nav button -->
+                <button class="text-xl border-2 border-[#FFDC26] px-7 py-2 rounded-lg text-[#111111]">Login</button>
+                <button
+                    class="text-xl border-2 border-[#FFDC26] px-7 py-2 bg-[#FFDC26] rounded-lg text-[#111111]">Register</button>
+                </div>
+            <img class="w-8 md:hidden" src="./c1-assets/menu.svg" alt="">
         </nav>
-
     </header>
-    <main>
+    <main class="max-w-screen-xl mx-auto Adlam-display-font  ">
+        <!-- banner -->
+        <div class="mt-10 px-4 md:min-h-screen md:bg-[url('c1-assets/cat-big.png')] bg-no-repeat bg-contain">
+            <!-- banner text -->
+            <div class="w-5/6 md:w-4/6 space-y-5 ">
+                <h2 class="text-4xl leading-1 md:text-6xl text-[#111111]">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h2>
+                <p class="text-base md:text-xl text-[#111111] ">Discover a world of treats, toys, and essentials handpicked for your
+                    furry friends. Shop now and make tails wag with joy!</p>
+                <button class="text-xl border-2 border-[#FFDC26] px-7 py-2 bg-[#FFDC26] rounded-lg">Find a pet</button>
+            </div>
+             <!-- mobile responsive -->
+              <div class="md:hidden">
+                <img src="./c1-assets/cat-big.png" alt="">
+              </div>
+
+        </div>
 
     </main>
     <footer>
