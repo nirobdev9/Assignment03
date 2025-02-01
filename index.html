@@ -48,26 +48,103 @@
                 <button class="text-xl border-2 border-[#FFDC26] px-7 py-2 rounded-lg text-[#111111]">Login</button>
                 <button
                     class="text-xl border-2 border-[#FFDC26] px-7 py-2 bg-[#FFDC26] rounded-lg text-[#111111]">Register</button>
-                </div>
+            </div>
             <img class="w-8 md:hidden" src="./c1-assets/menu.svg" alt="">
         </nav>
     </header>
-    <main class="max-w-screen-xl mx-auto Adlam-display-font  ">
-        <!-- banner -->
-        <div class="mt-10 px-4 md:min-h-screen md:bg-[url('c1-assets/cat-big.png')] bg-no-repeat bg-contain">
-            <!-- banner text -->
-            <div class="w-5/6 md:w-4/6 space-y-5 ">
-                <h2 class="text-4xl leading-1 md:text-6xl text-[#111111]">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h2>
-                <p class="text-base md:text-xl text-[#111111] ">Discover a world of treats, toys, and essentials handpicked for your
-                    furry friends. Shop now and make tails wag with joy!</p>
-                <button class="text-xl border-2 border-[#FFDC26] px-7 py-2 bg-[#FFDC26] rounded-lg">Find a pet</button>
-            </div>
-             <!-- mobile responsive -->
-              <div class="md:hidden">
-                <img src="./c1-assets/cat-big.png" alt="">
-              </div>
+    <main class="max-w-screen-xl mx-auto Adlam-display-font ">
+        <section>
+            <!-- banner -->
+            <div class="mt-10 px-4 md:min-h-screen md:bg-[url('c1-assets/cat-big.png')] bg-no-repeat bg-contain">
+                <!-- banner text -->
+                <div class="w-5/6 md:w-4/6 space-y-5 ">
+                    <h2 class="text-4xl leading-1 md:text-6xl text-[#111111]">Pamper Your Pet, <br> Because They Deserve
+                        <br> the Best
+                    </h2>
+                    <p class="text-base md:text-xl text-[#111111] sora-font">Discover a world of treats, toys, and
+                        essentials handpicked for your <br>furry friends. Shop now and make tails wag with joy!</p>
+                    <button class="text-xl border-2 border-[#FFDC26] px-7 py-2 bg-[#FFDC26] rounded-lg sora-font">Find a
+                        pet</button>
+                </div>
+                <!-- mobile responsive -->
+                <div class="md:hidden">
+                    <img src="./c1-assets/cat-big.png" alt="">
+                </div>
 
-        </div>
+            </div>
+        </section>
+        <section class="my-40 grid grid-cols-1 place-items-center">
+            <!-- category section -->
+            <!-- category heading -->
+            <div>
+                <h2 class="text-4xl text-[#111111]">Browse By Categories</h2>
+            </div>
+            <!-- category cards -->
+
+            <div class="mt-10 grid grid-cols-2 md:grid-cols-6 gap-5 ">
+                <!-- card-1 -->
+                <div class="bg-[#F9DF8A] w-[200px] py-9 grid place-items-center text-center space-y-2 rounded-xl">
+
+                    <img class="w-15 p-3 bg-[#FFFFFF] rounded-full" src="./c1-assets/dog-cartoon.png" alt="">
+                    <h5 class="text-xl">Dog</h5>
+                    <p>3 items</p>
+                </div>
+                <!-- card-2 -->
+
+                <div class="bg-[#F9DF8A] w-[200px] py-9 grid place-items-center text-center space-y-2 rounded-xl">
+
+                    <img class="w-15 p-3 bg-[#FFFFFF] rounded-full" src="./c1-assets/fish-cartoon.png" alt="">
+                    <h5 class="text-xl">Fish</h5>
+                    <p>3 items</p>
+                </div>
+                <!-- card-3 -->
+                <div class="bg-[#F9DF8A] w-[200px] py-9 grid place-items-center text-center space-y-2 rounded-xl">
+
+                    <img class="w-15 p-3 bg-[#FFFFFF] rounded-full" src="./c1-assets/mouse-cartoon.png" alt="">
+                    <h5 class="text-xl">small pet</h5>
+                    <p>3 items</p>
+                </div>
+                <!-- card-4 -->
+                <div class="bg-[#F9DF8A] w-[200px] py-9 grid place-items-center text-center space-y-2 rounded-xl">
+
+                    <img class="w-15 p-3 bg-[#FFFFFF] rounded-full" src="./c1-assets/rabbit-cartoon.png" alt="">
+                    <h5 class="text-xl">rabbit</h5>
+                    <p>3 items</p>
+                </div>
+                <!-- card-5 -->
+                <div class="bg-[#F9DF8A] w-[200px] py-9 grid place-items-center text-center space-y-2 rounded-xl">
+
+                    <img class="w-15 p-3 bg-[#FFFFFF] rounded-full" src="./c1-assets/bird-cartoon.png" alt="">
+                    <h5 class="text-xl">Birds</h5>
+                    <p>3 items</p>
+                </div>
+                <!-- card-6-->
+                <div class="bg-[#F9DF8A] w-[200px] py-9 grid place-items-center text-center space-y-2 rounded-xl">
+
+                    <img class="w-15 p-3 bg-[#FFFFFF] rounded-full" src="./c1-assets/cat-cartoon.png" alt="">
+                    <h5 class="text-xl">Cat</h5>
+                    <p>3 items</p>
+                </div>
+            </div>
+        </section>
+        <!-- pet product section -->
+         <section>
+            <!-- pet product heading -->
+             <div class="text-4xl text-[#111111]">
+                Trending Pet Products
+             </div>
+             <!-- pet product cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="grid grid-cols-4 grid-rows-3">
+                    <div class="w-[400px] h-[400px] bg-[#F9DF8A]">
+                        <h2>T- Shirt For Dogs</h2>
+                        <p>Discover a world of treats, toys, and essentials handpicked for </p>
+                    </div>
+                </div>
+            </div>
+
+
+         </section>
 
     </main>
     <footer>
