@@ -24,6 +24,28 @@
         .sora-font {
             font-family: "Sora", serif;
         }
+
+        @keyframes foldInOut {
+            0% {
+                transform: scaleY(0);
+                opacity: 0;
+            }
+
+            30% {
+                transform: scaleY(1);
+                opacity: 1;
+            }
+
+            70% {
+                transform: scaleY(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scaleY(0);
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 
@@ -60,7 +82,9 @@
             <div class="mt-10 px-4 md:min-h-screen md:bg-[url('c1-assets/cat-big.png')] bg-no-repeat bg-contain">
                 <!-- banner text -->
                 <div class="w-5/6 md:w-4/6 space-y-5 ">
-                    <h2 class="text-4xl leading-1 md:text-6xl text-[#111111]">Pamper Your Pet, <br> Because They Deserve
+                    <h2
+                        class="text-4xl leading-1 md:text-6xl text-[#111111] transform origin-top animate-[foldInOut_4s_infinite]">
+                        Pamper Your Pet, <br> Because They Deserve
                         <br> the Best
                     </h2>
                     <p class="text-base md:text-xl text-[#111111] sora-font">Discover a world of treats, toys, and
@@ -365,84 +389,97 @@
             </div>
             <!-- question and answers -->
             <div class="space-y-4">
-            <div class="collapse collapse-arrow bg-base-200 bg-[#F9DF8A] pl-5">
-                <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-2xl font-medium">What types of pets do you offer at your shop?</div>
-                <div class="collapse-content">
-                  <p class="sora-font">We offer a wide variety of pets including dogs, cats, birds, small mammals, and even exotic options in select locations. Our goal is to help you find the perfect companion that fits your lifestyle.</p>
+                <div class="collapse collapse-arrow bg-base-200 bg-[#F9DF8A] pl-5">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-2xl font-medium">What types of pets do you offer at your shop?</div>
+                    <div class="collapse-content">
+                        <p class="sora-font">We offer a wide variety of pets including dogs, cats, birds, small mammals,
+                            and even exotic options in select locations. Our goal is to help you find the perfect
+                            companion that fits your lifestyle.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="collapse collapse-arrow bg-base-200 bg-[#F9DF8A] pl-5">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-2xl font-medium">How can I choose the right food for my pet?</div>
-                <div class="collapse-content">
-                  <p class="sora-font"> Choosing the right food depends on your pet's age, breed, and health needs. We offer a range of premium pet foods and our knowledgeable staff can help guide you. We also recommend consulting with your veterinarian for personalized advice.</p>
+                <div class="collapse collapse-arrow bg-base-200 bg-[#F9DF8A] pl-5">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl font-medium">How can I choose the right food for my pet?</div>
+                    <div class="collapse-content">
+                        <p class="sora-font"> Choosing the right food depends on your pet's age, breed, and health
+                            needs. We offer a range of premium pet foods and our knowledgeable staff can help guide you.
+                            We also recommend consulting with your veterinarian for personalized advice.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="collapse collapse-arrow bg-base-200 bg-[#F9DF8A] pl-5">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-2xl font-medium">Do you offer pet grooming or training services?</div>
-                <div class="collapse-content">
-                  <p class="sora-font"> Yes, many pet owners love our additional services! We provide professional grooming services to keep your pet looking and feeling great, and we partner with certified trainers who offer classes and one-on-one sessions to help with behavior and obedience.</p>
+                <div class="collapse collapse-arrow bg-base-200 bg-[#F9DF8A] pl-5">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl font-medium">Do you offer pet grooming or training services?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="sora-font"> Yes, many pet owners love our additional services! We provide professional
+                            grooming services to keep your pet looking and feeling great, and we partner with certified
+                            trainers who offer classes and one-on-one sessions to help with behavior and obedience.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="collapse collapse-arrow bg-base-200 bg-[#F9DF8A] pl-5">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-2xl font-medium">What is your return or exchange policy for pet products?</div>
-                <div class="collapse-content">
-                  <p class="sora-font">We want you and your pet to be completely satisfied with your purchase. If you’re not happy with a product, please contact us within 30 days. We’ll work with you on a return or exchange, subject to our policy guidelines.</p>
+                <div class="collapse collapse-arrow bg-base-200 bg-[#F9DF8A] pl-5">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl font-medium">What is your return or exchange policy for pet
+                        products?</div>
+                    <div class="collapse-content">
+                        <p class="sora-font">We want you and your pet to be completely satisfied with your purchase. If
+                            you’re not happy with a product, please contact us within 30 days. We’ll work with you on a
+                            return or exchange, subject to our policy guidelines.</p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </section>
+        </section>
 
         <!-- newsletter section -->
-         <section class="relative top-60 z-10">
+        <section class="relative top-60 z-10">
             <div class="flex items-center justify-evenly bg-[#FFF9F4] py-8 rounded-2xl">
                 <div>
-                <!-- image -->
-                 <img src="./c1-assets/cute-pet-mid.png" alt="">
+                    <!-- image -->
+                    <img src="./c1-assets/cute-pet-mid.png" alt="">
                 </div>
                 <!-- newsletter content -->
-                 <div class="space-y-6">
+                <div class="space-y-6">
                     <h2 class="text-4xl">Get Pawsome News!</h2>
                     <p class="text-xl">Exclusive training tips, ticks, product deals and more.</p>
-                    <input placeholder="Enter your email..." class="bg-white block w-[450px] px-3 py-4" type="text" name="" id="">
-                    <button class="text-xl border-2 border-[#FFDC26] px-7 py-2 bg-[#FFDC26] rounded-lg sora-font">Subscribe</button>
-                 </div>
+                    <input placeholder="Enter your email..." class="bg-white block w-[450px] px-3 py-4" type="text"
+                        name="" id="">
+                    <button
+                        class="text-xl border-2 border-[#FFDC26] px-7 py-2 bg-[#FFDC26] rounded-lg sora-font">Subscribe</button>
+                </div>
             </div>
-         </section>
+        </section>
     </main>
     <!-- footer section -->
     <footer class="bg-[#FFDC26] pt-80 pb-32 sora-font">
         <div class="flex items-center justify-between max-w-screen-xl mx-auto">
             <!-- footer description -->
-             <div class="space-y-4">
+            <div class="space-y-4">
                 <div class="flex items-center gap-3">
                     <!-- logo -->
-                     <img src="./c1-assets/logo-footer.png" alt="">
-                     <h3 class="text-2xl">Browse4Pets</h3>
-                     </div>
-                <p class="text-xl">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br>friends</p>
-             </div>
-             <!-- footer links -->
-             <div>
+                    <img src="./c1-assets/logo-footer.png" alt="">
+                    <h3 class="text-2xl">Browse4Pets</h3>
+                </div>
+                <p class="text-xl">Discover a world of treats, toys, and <br> essentials handpicked for your furry
+                    <br>friends</p>
+            </div>
+            <!-- footer links -->
+            <div>
                 <ul class="text-xl space-y-4">
                     <li><a href="">Find a pet</a></li>
                     <li><a href="">Breeds</a></li>
                     <li><a href="">Contact us</a></li>
                 </ul>
-             </div>
-             <!-- footer social icons -->
-              <div class="mt-10">
-                 <h5 class="mb-2">Follow Us</h5>
-                 <div class="space-x-4">
-                 <i class="fa-brands fa-facebook text-2xl"></i>
-                 <i class="fa-brands fa-instagram text-2xl"></i>
-                 <i class="fa-brands fa-linkedin text-2xl"></i>
-                 <i class="fa-brands fa-youtube text-2xl"></i>
+            </div>
+            <!-- footer social icons -->
+            <div class="mt-10">
+                <h5 class="mb-2">Follow Us</h5>
+                <div class="space-x-4">
+                    <i class="fa-brands fa-facebook text-2xl"></i>
+                    <i class="fa-brands fa-instagram text-2xl"></i>
+                    <i class="fa-brands fa-linkedin text-2xl"></i>
+                    <i class="fa-brands fa-youtube text-2xl"></i>
                 </div>
-              </div>
+            </div>
 
         </div>
 
